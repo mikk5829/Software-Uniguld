@@ -1,0 +1,11 @@
+<nav id="menu">
+  <header class="major">
+    <h2>Fag</h2>
+  </header>
+  <ul>
+    <li *ngFor="let subject of subjects"
+        [class.selected]="subject === selectedSubject"
+        (click)="onSelect(subject)">
+      <a href="#">{{subject.courseNumber}} - {{subject.name}}</a></li>
+  </ul>
+</nav>
