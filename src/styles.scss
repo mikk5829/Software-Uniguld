@@ -1,1 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'sass/libs/vars';
+@import 'sass/libs/functions';
+@import 'sass/libs/mixins';
+@import 'sass/libs/vendor';
+@import 'sass/libs/breakpoints';
+@import 'sass/libs/html-grid';
+// @import 'fontawesome-all.min.css';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700');
+
+/*
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+// Breakpoints.
+
+	@include breakpoints((
+		xlarge:   ( 1281px,  1680px ),
+		large:    ( 981px,   1280px ),
+		medium:   ( 737px,   980px  ),
+		small:    ( 481px,   736px  ),
+		xsmall:   ( 361px,   480px  ),
+		xxsmall:  ( null,    360px  ),
+		xlarge-to-max:    '(min-width: 1681px)',
+		small-to-xlarge:  '(min-width: 481px) and (max-width: 1680px)'
+	));
+
+// Base.
+
+	@import 'sass/base/reset';
+	@import 'sass/base/page';
+	@import 'sass/base/typography';
+
+// Component.
+
+	@import 'sass/components/row';
+	@import 'sass/components/section';
+	@import 'sass/components/form';
+	@import 'sass/components/box';
+	@import 'sass/components/icon';
+	@import 'sass/components/image';
+	@import 'sass/components/list';
+	@import 'sass/components/actions';
+	@import 'sass/components/icons';
+	@import 'sass/components/contact';
+	@import 'sass/components/pagination';
+	@import 'sass/components/table';
+	@import 'sass/components/button';
+	@import 'sass/components/mini-posts';
+	@import 'sass/components/features';
+	@import 'sass/components/posts';
+
+// Layout.
+
+	@import 'sass/layout/wrapper';
+	@import 'sass/layout/main';
+	@import 'sass/layout/sidebar';
+	@import 'sass/layout/header';
+	@import 'sass/layout/banner';
+	@import 'sass/layout/footer';
+	@import 'sass/layout/menu';
