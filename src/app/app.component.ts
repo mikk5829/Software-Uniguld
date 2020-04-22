@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { faTwitter, faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons';
 import {  } from '@fortawesome/free-regular-svg-icons';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faLanguage } from '@fortawesome/free-solid-svg-icons';
 import {Subject} from './subjects/subject';
 
 @Component({
@@ -15,6 +15,7 @@ export class AppComponent {
   faFacebook = faFacebook;
   faGithub = faGithub;
   faBars = faBars;
+  faLanguage = faLanguage;
 
   showSidebar = false;
   selectedSubject: Subject;

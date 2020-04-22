@@ -8,11 +8,22 @@
         <a href="index.html" class="logo"><strong>Software Uniguld</strong> by Students</a>
         <ul class="icons">
           <li><a href="https://github.com/mikk5829/Software-Uniguld" class="logo" target="_blank"><fa-icon [icon]="faGithub"></fa-icon></a></li>
-          <li><a href="twitter.com" class="logo" target="_blank"><fa-icon [icon]="faTwitter"></fa-icon></a></li>
-          <li><a href="facebook.com" class="logo" target="_blank"><fa-icon [icon]="faFacebook"></fa-icon></a></li>
+          <li><a href="#" class="logo" target="_blank"><fa-icon [icon]="faLanguage"></fa-icon></a></li>
+<!--          <li><a href="twitter.com" class="logo" target="_blank"><fa-icon [icon]="faTwitter"></fa-icon></a></li>-->
+<!--          <li><a href="facebook.com" class="logo" target="_blank"><fa-icon [icon]="faFacebook"></fa-icon></a></li>-->
         </ul>
       </header>
       <app-subject-detail [subject]="selectedSubject"></app-subject-detail>
+      <section id="banner" *ngIf="!selectedSubject">
+        <div class="content">
+          <header>
+            <h1>Velkommen til Uniguld software-version!</h1>
+          </header>
+          <p>
+            Vælg et fag i menuen til venstre
+          </p>
+        </div>
+      </section>
     </div>
   </div>
 

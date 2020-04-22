@@ -4,8 +4,28 @@
       <h1>{{subject.name}}</h1>
       <p>{{subject.courseNumber}}</p>
     </header>
+    <p>
+      <strong>Beskrivelse af faget:</strong>
+      <br>
+      {{subject.description}}</p>
     <ul class="actions">
-      <li><a href="#" class="button big">Learn More</a></li>
+      <li><a href="https://kurser.dtu.dk/course/{{subject.courseNumber}}" class="button big" target="_blank">Læs mere på DTU Kursusbasen</a></li>
     </ul>
+  </div>
+</section>
+
+<section *ngIf="subject">
+  <header class="major">
+    <h2>Hjælpeprogrammer</h2>
+  </header>
+  <div class="posts">
+    <article *ngFor="let helperProgram of subject.helperPrograms">
+<!--      <a href="#" class="image"><img src="images/pic01.jpg" alt=""></a>-->
+      <h3>{{helperProgram.title}}</h3>
+      <p>{{helperProgram.description}}</p>
+      <ul class="actions">
+        <li><a href="#" class="button">Gå til programmet</a></li>
+      </ul>
+    </article>
   </div>
 </section>
