@@ -3,7 +3,7 @@
     <h2>Fag</h2>
   </header>
   <ul>
-    <li *ngFor="let subject of subjects"
+    <li *ngFor="let subject of subjects | async"
         [class.selected]="subject === selectedSubject"
         (click)="onSelect(subject)">
       <a href="#">{{subject.courseNumber}} - {{subject.name}}</a></li>

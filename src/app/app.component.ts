@@ -3,6 +3,7 @@ import { faTwitter, faFacebook, faGithub } from '@fortawesome/free-brands-svg-ic
 import {  } from '@fortawesome/free-regular-svg-icons';
 import { faBars, faLanguage } from '@fortawesome/free-solid-svg-icons';
 import {Subject} from './subjects/subject';
+import { AngularFirestore } from '@angular/fire/firestore';
 
 @Component({
   selector: 'app-root',
@@ -19,6 +20,9 @@ export class AppComponent {
 
   showSidebar = false;
   selectedSubject: Subject;
+  constructor(firestore: AngularFirestore) {
+
+  }
   hideMenu() {
     this.showSidebar = !this.showSidebar;
   }
