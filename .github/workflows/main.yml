@@ -17,6 +17,11 @@ jobs:
       with:
         node-version: '10.x'
     - run: npm install
+    - uses: falnyr/replace-env-vars-action@master
+      env: 
+        APIKEY: ${{ secrets.FIREBASE_API_KEY }}
+      with:
+        filename: src/environments/environment.prod.ts
     - run: npm run build:prod
     - uses: w9jds/firebase-action@master
       with:
