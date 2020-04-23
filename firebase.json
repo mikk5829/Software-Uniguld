@@ -9,7 +9,7 @@
     ]
   },
   "hosting": {
-    "public": "dist",
+    "public": "dist/software-uniguld",
     "ignore": [
       "firebase.json",
       "**/.*",
